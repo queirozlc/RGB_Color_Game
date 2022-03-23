@@ -1,4 +1,4 @@
-# Instruções Javascript:
+# Javascript Instructions:
 
 - Dom and variables
 
