@@ -2,7 +2,7 @@
 
 - Dom and variables
 
-## Functions:
+### Functions:
 
 - Setup a hard and easy mode
 - Function to controll all others, called init
