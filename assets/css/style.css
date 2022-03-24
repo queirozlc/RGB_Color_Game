@@ -13,6 +13,14 @@
   --background-dark: #232323;
 }
 
+@media screen and (max-width: 768px) {
+  :root {
+    --biggest-font: 2rem;
+    --normal-font: 0.825rem;
+    --big-font: 1rem;
+  }
+}
+
 /* Reset html */
 
 * {
@@ -92,9 +100,9 @@ main {
   padding-top: 25px;
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   justify-items: center;
+  width: 100%;
 }
 
 .box {
@@ -119,4 +127,38 @@ main {
 
 .mode {
   width: 150px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mode {
+    width: 75px;
+    padding: 4px 8px;
+  }
+
+  .box_container {
+    grid-template-columns: repeat(3, 150px);
+  }
+}
+
+@media (max-width: 425px) {
+  .box_container {
+    grid-template-columns: repeat(3, 120px);
+  }
+}
+
+@media (max-width: 320px) {
+  .box {
+    width: 75px;
+    height: 75px;
+  }
+
+  .box_container {
+    padding: 10px;
+    grid-template-columns: repeat(3, 100px);
+  }
 }
